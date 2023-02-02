@@ -1,2 +1,3 @@
 # CombinedJobServices
-All services and projects combined
+All job services and projects combined
+
