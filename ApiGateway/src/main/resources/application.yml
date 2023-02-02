@@ -1,0 +1,19 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    name: API-GATEWAY
+    
+  cloud:
+    gateway:
+      routes:
+      - id: RECRUITER-SERVICE
+        uri: lb://RECRUITER-SERVICE
+        predicates:
+        - Path=/recruiter/**
+          
+      - id: SEARCH-SERVICE
+        uri: lb://SEARCH-SERVICE
+        predicates:
+        - Path=/search/**
