@@ -1,14 +1,15 @@
-# CombinedJobServices
+# Combined Job Services
 All job services and projects combined
 
 
 !["architecture"](https://github.com/praffull9/CombinedJobServices/blob/fa354dbd3bdd04c343cf072446b21558ce2b8db1/ServicesArchitecture.png "Architecture")
 
-> # This service performs following functionalities
-- Register a company (MySQL cloud)
-- Register a recruiter for a company (MySQL) 
-- Post new jobs & store them in MongoDB Atlas on AWS
-- Publish the Job, Company and Recruiter data on Apache Kafka Topic for Consumers to pick
+> # This repository contains all modules combined
+- Recruiter/Employer services used to post jobs and publish them on Kafka - Java & Spring boot
+- Job search APIs that read jobs from Kafka topics and store them in MongoDB - Java & Spring boot
+- Client UI applications to add new jobs and search jobs on skills and locations - HTML5, Python & django
+- Eureka server for microservice registrations - Java & SPring boot
+- API gateway for service discovery - Java & Spring boot
 
 > # Tools used for development
 - Java17
@@ -21,6 +22,8 @@ All job services and projects combined
 - Spring security (Google OAuth2)
 - STS
 - PostMan
+- Python
+- django
 
 > # Please go through the PDF for more details and screenshots
 
